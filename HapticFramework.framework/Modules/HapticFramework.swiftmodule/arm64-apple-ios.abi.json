@@ -29,7 +29,7 @@
           {
             "kind": "Function",
             "name": "generateMediumFeedback",
-            "printedName": "generateMediumFeedback(intensity:)",
+            "printedName": "generateMediumFeedback(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -44,11 +44,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@HapticFramework@objc(cs)HapticFeedback(cm)generateMediumFeedbackWithIntensity:",
-            "mangledName": "$s15HapticFramework0A8FeedbackC014generateMediumC09intensityySf_tFZ",
+            "usr": "c:@M@HapticFramework@objc(cs)HapticFeedback(cm)generateMediumFeedbackWith:",
+            "mangledName": "$s15HapticFramework0A8FeedbackC014generateMediumC04withySf_tFZ",
             "moduleName": "HapticFramework",
             "static": true,
-            "objc_name": "generateMediumFeedbackWithIntensity:",
+            "objc_name": "generateMediumFeedbackWith:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -60,7 +60,7 @@
           {
             "kind": "Function",
             "name": "generateHeavyFeedback",
-            "printedName": "generateHeavyFeedback(intensity:)",
+            "printedName": "generateHeavyFeedback(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -75,11 +75,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@HapticFramework@objc(cs)HapticFeedback(cm)generateHeavyFeedbackWithIntensity:",
-            "mangledName": "$s15HapticFramework0A8FeedbackC013generateHeavyC09intensityySf_tFZ",
+            "usr": "c:@M@HapticFramework@objc(cs)HapticFeedback(cm)generateHeavyFeedbackWith:",
+            "mangledName": "$s15HapticFramework0A8FeedbackC013generateHeavyC04withySf_tFZ",
             "moduleName": "HapticFramework",
             "static": true,
-            "objc_name": "generateHeavyFeedbackWithIntensity:",
+            "objc_name": "generateHeavyFeedbackWith:",
             "declAttributes": [
               "Final",
               "AccessControl",

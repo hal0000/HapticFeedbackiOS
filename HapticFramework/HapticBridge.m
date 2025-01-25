@@ -12,13 +12,13 @@
 extern "C" {
 #endif
 
-    // 🔹 Call Swift functions correctly
+    // ✅ Corrected method calls with proper Objective-C syntax
     void GenerateMediumFeedback(float intensity) {
-        [HapticFeedback generateMediumFeedbackWithIntensity:intensity];
+        [HapticFeedback generateMediumFeedbackWith:intensity]; // ✅ Uses correct selector
     }
 
     void GenerateHeavyFeedback(float intensity) {
-        [HapticFeedback generateHeavyFeedbackWithIntensity:intensity];
+        [HapticFeedback generateHeavyFeedbackWith:intensity]; // ✅ Uses correct selector
     }
 
 #ifdef __cplusplus
