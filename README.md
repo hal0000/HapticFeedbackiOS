@@ -1,16 +1,40 @@
-This repository provides a custom iOS haptic feedback framework, designed for seamless and efficient integration in games and applications. It enables Unity and native iOS developers to trigger precise haptic feedback on iOS devices using Apple’s UIImpactFeedbackGenerator API.
+# HapticFeedbackiOS
 
-🎯 Features
-    ✅ Supports Medium & Heavy Haptic Feedback with Adjustable Intensity
-    ✅ Optimized for Game and App Integration
-    ✅ Lightweight & High-Performance Implementation
-    ✅ Works Seamlessly with Objective-C and Swift
-    ✅ Easy-to-use C# Bindings for Unity
-    ✅ Framework-based Integration (HapticFramework.framework)
-📌 Usage (Unity & iOS Integration)
-    ✅ Copy HapticFramework.framework to Assets/Plugins/iOS/ in your Unity project.
-    ✅ Ensure the framework is set to iOS in the Unity Inspector.
-To trigger haptic feedback in Unity, use the following C# wrapper (HapticManager.cs):
+This repository provides a **custom iOS haptic feedback framework**, designed for **seamless and efficient integration** in **games and applications**. It enables **Unity and native iOS developers** to trigger precise haptic feedback on iOS devices using **Apple’s `UIImpactFeedbackGenerator` API**.
+
+## 🎯 Features
+- ✅ **Supports Medium & Heavy Haptic Feedback with Adjustable Intensity**
+- ✅ **Optimized for Game and App Integration**
+- ✅ **Lightweight & High-Performance Implementation**
+- ✅ **Works Seamlessly with Objective-C and Swift**
+- ✅ **Easy-to-use C# Bindings for Unity**
+- ✅ **Framework-based Integration (`HapticFramework.framework`)**
+
+---
+
+## 📌 iOS Compatibility
+
+| iOS Version | Support Details |
+|-------------|----------------|
+| **iOS 17+** | ✅ Supports full intensity control (`impactOccurred(intensity:)`). |
+| **iOS 10 – 16** | ✅ Falls back to `impactOccurred()`, but without adjustable intensity. |
+| **iOS < 10** | ❌ Not supported (API does not exist). |
+
+- iOS 17+ users will have **precise intensity control** (0.0 - 1.0).
+- iOS 10 – 16 users will receive **standard haptic feedback** (without intensity adjustments).
+
+---
+
+## 📌 Usage (Unity & iOS Integration)
+
+### **1️⃣ Copy the Framework**
+- Copy **`HapticFramework.framework`** to **`Assets/Plugins/iOS/`** in your Unity project.
+- Ensure the framework is set to **iOS** in the **Unity Inspector**.
+
+### **2️⃣ Implement Haptic Feedback in Unity**
+To trigger haptic feedback in Unity, use the following **C# wrapper (`HapticManager.cs`)**:
+
+```csharp
 // --------------------------------------------------------------------------------------------------------------------
 // Copyright (C) 2024 Halil Mentes
 // All rights reserved.
@@ -57,8 +81,12 @@ public static class HapticManager
         #endif
     }
 }
+```
 
-This HapticFeedbackiOS framework provides an easy way to use haptic feedback in mobile games and applications with minimal overhead.
-It’s lightweight, efficient, and fully optimized for performance.
+---
+
+## 🚀 Summary
+The **HapticFeedbackiOS** framework provides an **easy way to use haptic feedback** in **mobile games and applications** with **minimal overhead**.  
+It’s **lightweight, efficient, and fully optimized for performance**.
 
 💡 Let me know if you need further modifications! 🚀
